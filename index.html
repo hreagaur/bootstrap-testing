@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" data-no-delete="yes"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-right: 10px;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      background-color: #d0dbff;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #f3a3a3;
+    }
+
+    .navbar {
+      background-color: #7d9db1;
+    }
+
+    .jumbotron {
+      background-color: #ffe5e2;
+    }
+
+    .footer {
+      background-color: #cd9ff6;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    h2,
+    h3 {
+      color: #403f4c;
+    }
+
+    p {
+      color: #6a6e73;
+    }
+
+    .img-thumbnail {
+      border-color: #a7bbc7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="jumbotron text-center bg-light">
+    <h1>Welcome to Our Page</h1>
+    <p class="lead">Your go-to destination for amazing content.</p>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="text-uppercase">Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec fermentum ex. Mauris sodales enim molestie,
+          auctor urna in, semper elit. Quisque ut mi sapien.</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="text-center">Sidebar</h3>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec fermentum ex.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec fermentum ex. Mauris
+              sodales enim molestie, auctor urna in, semper elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec fermentum ex. Mauris
+              sodales enim molestie, auctor urna in, semper elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Text Size Utilities</h2>
+    <p class="fs-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="fs-2">Nulla nec fermentum ex. Mauris sodales enim molestie.</p>
+    <p class="fs-3">Quisque ut mi sapien. Sed tempus sapien in ligula efficitur, id dapibus libero efficitur.</p>
+    <p class="fs-4">Duis vel felis non massa mollis gravida. Vestibulum condimentum nunc et neque pharetra, ut
+      ultricies velit sodales.</p>
+    <p class="fs-5">Praesent rutrum, lacus vitae convallis rutrum, odio elit feugiat dolor, nec interdum ligula leo
+      eu eros.</p> 
+  
+    <h2 class="mt-5">Text Decoration Utilities</h2>
+    <p class="text-decoration-none">Suspendisse potenti. Donec fringilla, arcu id tristique consectetur, nisi felis
+      viverra arcu, eget eleifend urna lacus et dolor.</p>
+    <p class="text-decoration-underline">Morbi varius mattis turpis, in gravida libero dictum a.</p>
+    <p class="text-decoration-line-through">Nam sit amet ex id magna aliquam hendrerit.</p>
+    <p class="text-decoration-underline text-decoration-line-through">Fusce rhoncus urna sit amet vehicula
+      feugiat.</p>
+  
+    <h2 class="mt-5">Text Transformation Utilities</h2>
+    <p class="text-lowercase">VESTIBULUM EGESTAS TORTOR AT EFFICITUR CURSUS.</p>
+    <p class="text-uppercase">mauris sodales enim molestie.</p>
+    <p class="text-capitalize">sed tempus sapien in ligula efficitur.</p>
+  
+    <h2 class="mt-5">Text Alignment Utilities</h2>
+    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p class="text-center">Nulla nec fermentum ex. Mauris sodales enim molestie.</p>
+    <p class="text-end">Quisque ut mi sapien. Sed tempus sapien in ligula efficitur.</p>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Responsive Image</h2>
+    <img src="https://stock.adobe.com/search?k=icecream/800/400" class="img-fluid" alt="Cat Image">
+  </div>
+  
+  <div class="container mt-5">
+    <h2>Table</h2>
+    <table class="table table-dark table-hover table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Header 1</th>
+          <th scope="col">Header 2</th>
+          <th scope="col">Header 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 1 Data 1</td>
+          <td>Row 1 Data 2</td>
+          <td>Row 1 Data 3</td>
+        </tr>
+        <tr>
+          <td>Row 2 Data 1</td>
+          <td>Row 2 Data 2</td>
+          <td>Row 2 Data 3</td>
+        </tr>
+        <tr>
+          <td>Row 3 Data 1</td>
+          <td>Row 3 Data 2</td>
+          <td>Row 3 Data 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Alerts</h2>
+    <div class="alert alert-primary" role="alert">
+      This is a primary alert—check it out!
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      This is a secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+      This is a success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+      This is a danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+      This is a warning alert—check it out!
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.pexels.com/photos/19605327/pexels-photo-19605327/free-photo-of-silhouette-of-man-on-footbridge.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/235683/pexels-photo-235683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/7947783/pexels-photo-7947783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Slide 3">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.pexels.com/photos/7474646/pexels-photo-7474646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Slide 4">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div>
+    <i class="bi bi-alarm icon"></i>
+    <i class="bi bi-basket icon"></i>
+    <i class="bi bi-heart icon"></i>
+    <i class="bi bi-envelope icon"></i>
+    <i class="bi bi-camera icon"></i>
+  </div>
+
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll share your email with everyone.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <label for="disabledRange" class="form-label">Disabled range</label>
+<input type="range" class="form-range" id="disabledRange" disabled>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Checked checkbox
+  </label>
+</div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Basic Bootstrap Page.hrea gaur</p>
+  </footer>
+
+</body>
+
+</html>
